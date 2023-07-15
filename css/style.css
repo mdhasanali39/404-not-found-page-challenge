@@ -69,4 +69,21 @@ body {
   border: none;
   padding: 20px 35px;
 }
-
+/* Footer Styling start  */
+.footer{
+    padding-top: 200px;
+}
+.copyright-text {
+  color: #bdbdbd;
+  text-align: center;
+  font-family: var(--ff-footer);
+  font-size: 14px;
+  font-weight: 500;
+}
+.copyright-text .username {
+  color: #bdbdbd;
+  font-family: var(--ff-footer);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
