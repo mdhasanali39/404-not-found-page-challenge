@@ -27,6 +27,9 @@ body {
   letter-spacing: -1.92px;
   text-transform: uppercase;
 }
+.red-span {
+  color: red;
+}
 /* main content section styling start  */
 .main-content-container {
   height: 90vh;
@@ -59,31 +62,39 @@ body {
   margin-bottom: 65px;
 }
 .btn {
-  background-color: #333;
+  background-color: coral;
   color: #fff;
   font-family: var(--ff-primary);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: -0.49px;
+  letter-spacing: 0.39px;
   text-transform: uppercase;
   border: none;
+  border-radius: 5px;
   padding: 20px 35px;
+  transition: color .3s ease-in, background-color .3s ease-in, outline .3s ease-in;
+}
+.btn:hover {
+  color: coral;
+  background-color: #fff;
+  outline: 1px solid coral;
 }
 /* Footer Styling start  */
-.footer{
-    padding-top: 200px;
+.footer {
+  padding-top: 200px;
 }
 .copyright-text {
-  color: #bdbdbd;
+  color: #697173;
   text-align: center;
   font-family: var(--ff-footer);
   font-size: 14px;
   font-weight: 500;
 }
 .copyright-text .username {
-  color: #bdbdbd;
+  color: #1b97b3;
   font-family: var(--ff-footer);
   font-size: 14px;
   font-weight: 700;
   text-decoration-line: underline;
+  cursor: pointer;
 }
