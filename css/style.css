@@ -1,23 +1,72 @@
 /* font family imported*/
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700;500&family=Space+Mono:wght@400;700&display=swap");
 
 /* Utilities */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --ff-primary: Space Mono;
+  --ff-logo: Inconsolata;
+  --ff-footer: Montserrat;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* body styling here  */
-body{
-    padding: 20px 75px;
+body {
+  padding: 20px 75px;
 }
 /* header section styling start  */
-.header h2{
-    color: #333;
-    font-family: Inconsolata;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -1.92px;
-    text-transform: uppercase;
+.header h2 {
+  color: #333;
+  font-family: var(--ff-logo);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
 }
+/* main content section styling start  */
+.main-content-container {
+  height: 90vh;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 110px;
+  padding-top: 150px;
+}
+.main-content-img,
+.main-content-textbox {
+  flex: 1;
+}
+.main-content-img img {
+  width: 95%;
+}
+.main-content-textbox-title {
+  color: #333;
+  font-family: var(--ff-primary);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -2.24px;
+}
+.main-content-textbox-description {
+  color: #4f4f4f;
+  font-family: var(--ff-primary);
+  font-size: 24px;
+  letter-spacing: -0.84px;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+.btn {
+  background-color: #333;
+  color: #fff;
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.49px;
+  text-transform: uppercase;
+  border: none;
+  padding: 20px 35px;
+}
+
