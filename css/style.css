@@ -16,9 +16,12 @@
 
 /* body styling here  */
 body {
-  padding: 20px 75px;
+  padding: 30px 75px 25px;
 }
 /* header section styling start  */
+.header {
+  height: 10vh;
+}
 .header h2 {
   color: #333;
   font-family: var(--ff-logo);
@@ -34,10 +37,9 @@ body {
 .main-content-container {
   height: 90vh;
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
   gap: 110px;
-  padding-top: 150px;
 }
 .main-content-img,
 .main-content-textbox {
@@ -52,6 +54,7 @@ body {
   font-size: 64px;
   font-weight: 700;
   letter-spacing: -2.24px;
+  width: 80%;
 }
 .main-content-textbox-description {
   color: #4f4f4f;
@@ -60,6 +63,7 @@ body {
   letter-spacing: -0.84px;
   margin-top: 30px;
   margin-bottom: 65px;
+  width: 50%;
 }
 .btn {
   background-color: coral;
@@ -72,7 +76,9 @@ body {
   border: none;
   border-radius: 5px;
   padding: 20px 35px;
-  transition: color .3s ease-in, background-color .3s ease-in, outline .3s ease-in;
+  cursor: pointer;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in,
+    outline 0.3s ease-in;
 }
 .btn:hover {
   color: coral;
@@ -81,7 +87,10 @@ body {
 }
 /* Footer Styling start  */
 .footer {
-  padding-top: 200px;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .copyright-text {
   color: #697173;
@@ -97,4 +106,80 @@ body {
   font-weight: 700;
   text-decoration-line: underline;
   cursor: pointer;
+}
+
+/* Responsive design Start here  */
+@media (max-width: 575.98px) {
+  body {
+    padding: 20px 30px;
+  }
+  .header{
+    margin-bottom: 150px;
+  }
+  .main-content-container {
+    flex-direction: column;
+  }
+  .main-content-textbox-title {
+    font-size: 40px;
+  }
+  .main-content-textbox-description {
+    width: 100%;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 18px 20px;
+  }
+  .footer {
+    padding-top: 250px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header{
+    margin-bottom: 100px;
+  }
+  .main-content-container {
+    flex-direction: column;
+      gap: 70px;
+  }
+  .main-content-img{
+    width: 60%;
+  }
+  .main-content-textbox-title {
+      font-size: 45px;
+  }
+  .main-content-textbox-description {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 959.98px) {
+  .header{
+    margin-bottom: 100px;
+  }
+  .main-content-container {
+    flex-direction: column;
+      gap: 70px;
+  }
+  .main-content-img{
+    width: 50%;
+  }
+  .main-content-textbox-title {
+    width: 100%;
+      font-size: 45px;
+  }
+  .main-content-textbox-description {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 959.98px) and (max-width: 1300px) {
+  
+  .main-content-textbox-title {
+    width: 90%;
+      font-size: 45px;
+  }
+  .main-content-textbox-description {
+    width: 90%;
+  }
 }
